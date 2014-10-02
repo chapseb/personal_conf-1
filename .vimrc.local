@@ -2,7 +2,7 @@
 " This file is designed to add your own vim scripts or override the exVim's .vimrc settings.
 
 set cursorline
-hi CursorLine guibg=#e7ebff
+hi CursorLine guibg=#17181A
 
 " Pour conserver d'avantages d'historique
 set history=1000

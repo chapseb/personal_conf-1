@@ -81,7 +81,7 @@ zstyle ':completion:*' list-colors "$LS_COLORS"
 #aliases
 alias df='df -h'
 alias dus='du -sh'
-
+alias ll='ls -al'
 alias history='history -dDf'
 
 function genpass() {

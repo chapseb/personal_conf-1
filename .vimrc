@@ -489,3 +489,13 @@ if filereadable(expand(vimrc_local_path))
 endif
 
 " vim:ts=4:sw=4:sts=4 et fdm=marker:
+let Tlist_Ctags_Cmd ='/usr/local/bin/ctags'
+" TagList
+set tags=./tags;
+" Support for https://github.com/ivalkeen/guard-ctags-bundler
+set tags+=gems.tags
+map <leader>l :TlistToggle <cr>
+let Tlist_Use_Right_Window = 1
+let Tlist_WinWidth = 60
+" Generate ctags for all bundled gems as well
+map <leader>rt :!ctags --extra=+f --languages=-javascript --exclude=.git --exclude=log -R * `rvm gemdir`/gems/* `rvm gemdir`/bundler/gems/*<CR><C-M>
