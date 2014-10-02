@@ -1,7 +1,6 @@
 [user]
-    name = Johan Cwiklinski
-    email = johan@x-tnd.be
-    signkey = 0x8BA59F94
+    name = Vincent Fleurette
+    email = vincent.fleurette@iserv.fr
 [core]
     editor = vim
     autocrlf = input
