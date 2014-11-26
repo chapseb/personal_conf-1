@@ -182,10 +182,10 @@ if has('gui_running')
     " set guifont
     function! s:set_gui_font()
         if has('gui_gtk2')
-            if getfontname( 'DejaVu Sans Mono for Powerline' ) != ''
-                set guifont=DejaVu\ Sans\ Mono\ for\ Powerline\ 12
-            elseif getfontname( 'DejaVu Sans Mono' ) != ''
-                set guifont=DejaVu\ Sans\ Mono\ 12
+            if getfontname( 'Source Code Pro for Powerline' ) != ''
+                set guifont=Source\ Code\ Pro\ for\ Powerline\ 12
+            elseif getfontname( 'Source Code Pro' ) != ''
+                set guifont=Source\ Code\ Pro\ 12
             else
                 set guifont=Luxi\ Mono\ 12
             endif
@@ -193,10 +193,10 @@ if has('gui_running')
             " Also for GTK 1
             set guifont=*-lucidatypewriter-medium-r-normal-*-*-180-*-*-m-*-*
         elseif OSX()
-            if getfontname( 'DejaVu Sans Mono for Powerline' ) != ''
-                set guifont=DejaVu\ Sans\ Mono\ for\ Powerline:h15
-            elseif getfontname( 'DejaVu Sans Mono' ) != ''
-                set guifont=DejaVu\ Sans\ Mono:h15
+            if getfontname( 'Source Code Pro for Powerline' ) != ''
+                set guifont=Source\ Code\ Pro\ for\ Powerline:h13
+            elseif getfontname( 'Source Code Pro' ) != ''
+                set guifont=Source\ Code\ Pro:h13
             endif
         elseif WINDOWS()
             if getfontname( 'DejaVu Sans Mono for Powerline' ) != ''
