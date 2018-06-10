@@ -3,23 +3,23 @@ utilities functions and theme for my personal use.
 
 Each .zshrc-{username} contains specific user information.
 
-Assuming you put the config to /home/.config, you should just
+Assuming you put the config to /Users/YOURPROFILE/ and you name your repo '.config', you should just
 create the following symlinks (or copy the files):
 cd ~
-ln -s ../.config/.zshrc-trasher .zshrc-`whoami`
-ln -s ../.config/.zshrc .
-ln -s ../.config/.zsh_functions .
-ln -s ../.config/.zsh-ulysses-theme .
+ln -s .config/.zshrc-trasher .zshrc-`whoami`
+ln -s .config/.zshrc .
+ln -s .config/.zsh_functions .
+ln -s .config/.zsh-ulysses-theme .
 
 In order to use the root config, just use .zshrc-root instead of .zshrc-trasher,
 and omit .zsh-ulysses-theme.
 
 To use vim config files, you'll have to create the following symlinks
 (or copy the files):
-ln -s ../.config/.vim .
-ln -s ../.config/.vimrc .
-ln -s ../.config/.vimrc.local .
-ln -s ../.config/.vimrc.plugins .
-ln -s ../.config/.vimrc.plugins.local .
+ln -s .config/.vim .
+ln -s .config/.vimrc .
+ln -s .config/.vimrc.local .
+ln -s .config/.vimrc.plugins .
+ln -s .config/.vimrc.plugins.local .
 
 Other config files may be linked as well, depending on requirements
