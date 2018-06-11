@@ -23,3 +23,10 @@ ln -s .config/.vimrc.plugins .
 ln -s .config/.vimrc.plugins.local .
 
 Other config files may be linked as well, depending on requirements
+
+If you want persistent undo, you can create a dedicated directory for undo
+history files:
+mkdir ~/.vim/undodir 
+
+You can change the directory location and name but don't forget to change it
+also in .vimrc file (just change the 'undodir' variable value).

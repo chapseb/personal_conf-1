@@ -3,6 +3,8 @@
 "/////////////////////////////////////////////////////////////////////////////
 
 set nocompatible " be iMproved, required
+set undodir=~/.vim/undodir
+set undofile " Maintain undo history between session
 
 function! OSX()
     return has('macunix')
